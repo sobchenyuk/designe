@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+@font-face { font-family: 'Montserrat-bold';  src: url('../fonts/montserrat/montserrat/Montserrat-Bold.ttf') format('truetype'); font-style: normal;  }
+@font-face {  font-family: 'Montserrat-Regular';  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'); font-style: normal;  }
+@font-face {  font-family: 'Montserrat - Semi Bold';  src: url('../fonts/montserrat/montserrat/Montserrat-SemiBold.ttf') format('truetype');font-weight: bolder;font-style: normal;  }
+@font-face { font-family: 'FontAwesome';  src: url('../fonts/font-awesome-4.7.0/fonts/FontAwesome.otf') format('truetype'); font-style: normal;  }
+
+/*
+*
+*font-family: 'Montserrat', sans-serif;
+*font-family: 'Roboto', sans-serif;
+*/
+body{
+    margin:0;
+    font-size: 14px;
+    font-weight: bold;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+h2{
+    
+    letter-spacing: 1.4px;
+    opacity: 0.9;
+    font-size: 28px;
+    color: #000000;
+    font-family: "Montserrat - Semi Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+.container{
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0px 15px;
+}
+.wrap{
+    position: relative;
+}
+.section-title{
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+    color: #000000;
+    font-family: "Montserrat - Semi Bold",sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+
+.sub-title{
+    color: #434343;
+    font-family: Montserrat ,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: none;
+}
+.section-title span{
+    margin-bottom: 5px;
+    display: block;
+}
+/* header navigation*/
+.header-wrapper{
+    position: fixed;
+    content:'' ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    padding: 68px 0 0 0;
+
+
+    
+}
+.nav li a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    padding: 5px 12px;
+    border: 2px solid transparent;
+    display: flex;
+    font-family: Montserrat,sans-serif;
+}
+.card-title{
+color: #4a4747;
+font-family: Montserrat,sans-serif;
+font-size: 24px;
+font-weight: 500;
+}
+.card-text{
+color: #000000;
+font-family: Montserrat,sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+}
+
+.slider{
+    position: relative;
+}
+.carusel-content {
+    position: absolute;
+    top: 45%;
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+    z-index: 10;
+    
+}
+.carousel-title{
+    font-family: Montserrat,sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 55px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    margin-bottom: 48px;}
+    
+
+a.carousel-btn {
+    position: relative;
+    text-shadow: 0 15px 32px rgba(0, 0, 0, 0.2);
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    border: 2px solid #f8f9fa00;
+    border-radius: 2px;
+    padding: 5px 7px;
+    letter-spacing: 1.35px;
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 20;        
+}
+  
+/* SECTION SERVICE */
+#service{
+    position: relative;
+    background: #efefef;
+    padding: 130px 0;
+}
+#service .section-title{
+    margin-bottom: 30px;
+    padding: 25px 5px;
+
+}
+#service .card-service{
+text-align: center;
+font-family: Montserrat,sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 32px;
+}
+.card-service,.card-project ,.card-team{
+    margin-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+}
+.card-service:hover,.card-project:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.38);
+}
+.card-service .card-title{
+margin-top: 23px;
+color: #434343;
+font-family: "Montserrat - Semi Bold",sans-serif;
+font-size: 18px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 1.8px;
+}
+.card-img-top{
+    margin: 0 auto 10px;
+    width: 55px;
+    height: 45px;
+    overflow: hidden; 
+    text-indent: -9999px; 
+    text-align: left;
+}
+
+.icon-dev {
+    background: url('../img/css_sprites.png') -10px -75px;  
+}
+
+
+.icon-des { 
+    background: url('../img/css_sprites.png') -85px -10px; 
+}
+.icon-soft{
+    background: url('../img/css_sprites.png') -10px -10px;
+}
+/* SECTION PROJECTS */
+#projects{
+    background:#f8f8f8;
+    padding: 100px 0;
+}
+.card-project{
+    position: relative;
+    margin-bottom: 20px;
+}
+.card-project .card-img{
+    width: 100%;
+    height: 380px;
+}
+/* SECTION Team */
+#team{
+    position: relative;
+    padding: 100px 0; 
+}
+.card-hover{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f9f9f9b3;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: all 0.3s ease;
+}
+#team .card-title{
+    font-size: 18px;
+}
+#team .text-bottom{
+    padding: 7px 5px;
+}
+#team .social .social__link{
+    color: green;
+    font-size: 16px;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+.card-team:hover{
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.45);
+}
+.card-team:hover .card-hover{
+display: block;
+
+
+
+}
+
+
+/* SECTION testimonial */
+#testimonial{
+    position: relative;
+    background: url('../img/Layer-539.png') center no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.content{
+    position: relative;
+    z-index: 30px;
+    padding: 54px 0;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+#carouselTestimonia .carousel-indicators{
+    color: green;
+}
+.wrap-picture{
+    padding: 50px 0;
+  }
+  .picture, .picture div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 155px;
+    height: 155px;
+    
+  }
+  .picture {
+    transform: rotate(45deg) translateY(10px);
+     border:4px solid green;
+  }
+  .picture .picture-rotate {
+    width: 206px;
+    height: 206px;
+    transform: rotate(-45deg) translateY(-42px);
+   
+  }
+  .picture .picture-rotate img {
+    width: 100%;
+    height: auto;
+  }
+.content .description{
+    width: 73%;
+    margin: 20px auto;
+    text-align: center;
+    color: #434343;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+/*Карусель отзывы*/
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    margin-right: -11px;
+    margin-left: 21px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    background-color: #26af5f;
+    opacity: 0.5;
+    transform: rotate(-45deg) translateY(-28px);
+}
+.carousel-indicators .active {
+    background-color: #26af5f;
+    opacity: 1;
+}
+
+/* SECTION partners */
+#partners{
+    position: relative;
+    padding: 100px 0;
+}
+/* SECTION BLOG */
+#blog{
+    background: #efefef;
+    position: relative;
+    padding: 90px 0;
+}
+#blog .section-title{
+    margin-bottom: 90px;
+}
+.card-blog .card-body{
+    text-align: start;
+}
+.card-blog .card-title{
+    margin-bottom: 30px;
+}
+.card-blog .card-title{
+    margin-bottom: 30px;
+}
+.blog-details{
+    margin: 30px 0 20px;
+    padding: 0 20px;
+}
+.blog-details .data,.blog-details .comment{
+opacity: 0.5;
+color: #000000;
+font-family: Montserrat,sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 13.73px;
+}
+.data .icon,.comment .icon{
+    color: #26af5e;
+}
+.data a,.comment a {
+    color: #4a4747;
+    text-decoration: none;
+}
+
+
+/* SECTION CONTACTS */
+#contact{
+    position: relative;
+    background: url('../img/Layer-537.jpg') center no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+#contact .title{
+    color: #ffffff;
+    font-family: "Montserrat - Semi Bold",sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* Text style for "D, on’t be" */
+    letter-spacing: 1.78px; 
+    margin-bottom:90px; 
+}
+
+.block-location{
+    background: #ffffff;
+    padding: 50px 70px 60px;
+    flex-direction: column;
+    border-radius: 3px;
+}
+.block-location .section-title{
+   text-align: left;
+   width: 100%;
+    opacity: 0.8;
+    color: #4a4747;
+    margin-bottom: 60px;
+}
+.location .icon{
+    text-align: center;
+    color: #26af5e;
+    font-size: 26px;
+}
+.location{
+    margin-bottom: 40px;
+}
+.location-link{
+opacity: 0.8;
+color: #000000;
+font-family: Montserrat,sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 29.27px;
+letter-spacing: -0.4px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.block-form .form-control{
+    background: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    border-radius: 1px;
+}
+#form input::placeholder,#form textarea::placeholder {
+    font-family: FontAwesome,Montserrat,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.6;
+    color: #ffffff;
+  }
+  
+
+.form-group .btn-form{
+    margin-top: 40px;
+    color: #26af5f;
+    font-family: Montserrat,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.btn-form{
+    width: 170px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.24);
+    border-radius: 3px;
+    background-color: #ffffff;
+  }
+
+/*  SECTION social-networks*/
+#social-networks{
+    position: relative;
+    padding: 100px 0;  
+}
+#social-networks h2{
+opacity: 0.8;
+color: #000000;
+font-family: Montserrat,sans-serif;
+font-size: 50px;
+font-weight: 700;
+line-height: 40px;
+text-transform: uppercase;
+letter-spacing: 3.75px;
+}
+.social{
+    margin-top: 20px;
+}
+.social a{
+    font-size: 22px;
+    padding: 5px 8px;
+    text-decoration: none;
+    color: #c0c0c0;
+}
+.social a:hover{
+ color: #26af5e;;
+}
+/*FOOTTER*/
+.footer{
+    background: #000;
+    
+}
+.inner-wrapper{
+    text-align: center;
+    padding: 54px;
+    position: relative;
+}
+.copyright p{
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+}
+.copyright p a{
+    text-decoration: none;
+    color: #4a4747;
+}
