@@ -15,7 +15,7 @@
 body{
     margin:0;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 400;
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -41,13 +41,16 @@ h2{
     color: #000000;
     font-family: "Montserrat - Semi Bold", sans-serif;
     text-transform: uppercase;
+   
+}
+a{
+    font-family: Montserrat,sans-serif;
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1196px;
     margin-left:auto;
     margin-right:auto;
-    padding: 0px 15px;
 }
 .wrap{
     position: relative;
@@ -56,12 +59,8 @@ h2{
     text-align: center;
     width: 55%;
     margin: 0 auto;
-    color: #000000;
-    font-family: "Montserrat - Semi Bold",sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
+
+    
 }
 
 .sub-title{
@@ -70,10 +69,14 @@ h2{
     font-size: 18px;
     font-weight: 400;
     line-height: 36px;
+    letter-spacing: 1px;
     text-transform: none;
 }
+.section-title h2{
+    line-height: 40px;
+}
 .section-title span{
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     display: block;
 }
 /* header navigation*/
@@ -83,24 +86,31 @@ h2{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 5;
-    padding: 68px 0 0 0;
-
-
-    
+    z-index: 20;
+    padding: 54px 0 20px;
 }
+.header-wrapper.sticky{
+    background-color: #fff;
+    border-bottom: 2px solid #80808057;
+}
+.header-wrapper.sticky .logo{
+    filter:invert(100%); 
+}
+.header-wrapper.sticky .nav-items{
+    color: #000;
+}
+
 .nav li a {
+    display: inline-block;
     color: #ffffff;
     font-size: 14px;
-    font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
     text-decoration-line: none;
-    padding: 5px 12px;
-    border: 2px solid transparent;
-    display: flex;
-    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    padding: 0 15px;
 }
+
 .card-title{
 color: #4a4747;
 font-family: Montserrat,sans-serif;
@@ -108,35 +118,31 @@ font-size: 24px;
 font-weight: 500;
 }
 .card-text{
-color: #000000;
-font-family: Montserrat,sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
+    color: #5e5e5e;
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
 }
 
-.slider{
-    position: relative;
-}
+
 .carusel-content {
     position: absolute;
-    top: 45%;
+    top: 43%;
     bottom: 0;
     left: 30%;
     right: 30%;
     z-index: 10;
-    
 }
 .carousel-title{
     font-family: Montserrat,sans-serif;
-    font-size: 50px;
+    font-size: 49px;
     font-weight: 500;
-    line-height: 55px;
+    line-height: 53px;
     text-transform: uppercase;
-    letter-spacing: 1.25px;
-    margin-bottom: 48px;}
-    
-
+    letter-spacing: 3.25px;
+    margin-bottom: 48px;
+}
 a.carousel-btn {
     position: relative;
     text-shadow: 0 15px 32px rgba(0, 0, 0, 0.2);
@@ -145,7 +151,7 @@ a.carousel-btn {
     font-weight: 400;
     line-height: 40px;
     border: 2px solid #f8f9fa00;
-    border-radius: 2px;
+    border-radius: 1px;
     padding: 5px 7px;
     letter-spacing: 1.35px;
     background: transparent;
@@ -159,22 +165,18 @@ a.carousel-btn {
 #service{
     position: relative;
     background: #efefef;
-    padding: 130px 0;
+    padding: 102px 0 120px;
 }
 #service .section-title{
     margin-bottom: 30px;
     padding: 25px 5px;
 
 }
-#service .card-service{
-text-align: center;
-font-family: Montserrat,sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 32px;
+.card-service{
+  padding-bottom: 2rem;
 }
-.card-service,.card-project ,.card-team{
-    margin-top: 20px;
+.card-service,.card-team{
+    margin-top: 40px;
     text-align: center;
     vertical-align: middle;
     border: none;
@@ -182,9 +184,10 @@ line-height: 32px;
 }
 .card-service:hover,.card-project:hover{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.38);
+    transition: 3s;
 }
 .card-service .card-title{
-margin-top: 23px;
+margin: 23px 0;
 color: #434343;
 font-family: "Montserrat - Semi Bold",sans-serif;
 font-size: 18px;
@@ -193,9 +196,9 @@ text-transform: uppercase;
 letter-spacing: 1.8px;
 }
 .card-img-top{
-    margin: 0 auto 10px;
-    width: 55px;
-    height: 45px;
+    margin: 18px auto 23px auto;
+    width: 47px;
+    height: 50px;
     overflow: hidden; 
     text-indent: -9999px; 
     text-align: left;
@@ -204,8 +207,6 @@ letter-spacing: 1.8px;
 .icon-dev {
     background: url('../img/css_sprites.png') -10px -75px;  
 }
-
-
 .icon-des { 
     background: url('../img/css_sprites.png') -85px -10px; 
 }
@@ -215,7 +216,31 @@ letter-spacing: 1.8px;
 /* SECTION PROJECTS */
 #projects{
     background:#f8f8f8;
-    padding: 100px 0;
+    padding: 120px 0;
+}
+#projects .section-title{
+    margin-bottom: 28px;
+}
+#projects .section-content{
+    margin-top: 24px;
+}
+#projects a{
+    color: #ffffff;
+    font-family: Montserrat,sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 1px; 
+    text-transform: capitalize;
+    margin-top: 79px;
+}
+#projects a:hover{
+    color: #434343;
+    filter: invert(10%);
+}
+#projects .sub-title {
+    margin-top: 30px;
+    padding: 0;
 }
 .card-project{
     position: relative;
@@ -223,14 +248,41 @@ letter-spacing: 1.8px;
 }
 .card-project .card-img{
     width: 100%;
-    height: 380px;
+    height: 326px;
+}
+
+.btn-load{
+    font-family: sans-serif;
+    display: block;
+    text-decoration: none;
+    width: 183px;
+    color: #fff;
+    padding: 7px 18px;
+    margin: 0 auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #26af5f;
+}
+.btn:hover{
+    color:#000;
+    background:#efefef; 
 }
 /* SECTION Team */
 #team{
     position: relative;
-    padding: 100px 0; 
+    padding: 120px 0; 
 }
-.card-hover{
+#team .section-title{
+    margin-bottom: 38px
+}
+#team .sub-title{
+    margin-top: 14px;
+    
+}
+#team .section-content{
+    margin-top: 59px;
+}
+#team .card-hover{
     display: none;
     position: absolute;
     bottom: 0;
@@ -239,31 +291,37 @@ letter-spacing: 1.8px;
     background: #f9f9f9b3;
     text-align: center;
     backface-visibility: hidden;
-    transition: all 0.3s ease;
+    transition: 3s;
 }
 #team .card-title{
     font-size: 18px;
 }
 #team .text-bottom{
-    padding: 7px 5px;
+    padding: 15px 5px;
 }
-#team .social .social__link{
+#team .social .social-link{
     color: green;
     font-size: 16px;
     padding: 3px 5px;
     text-decoration: none;
 }
-.card-team:hover{
+#team .social .social-link:hover{
+    color: #5e5e5e;
+    font-size: 16px;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+#team .card-team:hover{
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.45);
+    transition: 3s;
 }
-.card-team:hover .card-hover{
+#team .card-team:hover .card-hover{
 display: block;
-
-
-
 }
-
-
+#team  .section-title span {
+    margin-bottom: 4px;
+    display: block;
+}
 /* SECTION testimonial */
 #testimonial{
     position: relative;
@@ -271,38 +329,36 @@ display: block;
     background-size: cover;
     padding: 120px 0;
 }
+#testimonial .section-content{
+    width: 83.3%;
+    margin: 0 auto;
+}
 
 .content{
     position: relative;
     z-index: 30px;
-    padding: 54px 0;
+    padding: 21px 0;
     background: #ffffff;
     border-radius: 2px;
 }
-
-#carouselTestimonia .carousel-indicators{
-    color: green;
-}
 .wrap-picture{
-    padding: 50px 0;
+    padding: 3px 0;
   }
   .picture, .picture div {
     margin: 0 auto;
     transform-origin: 50% 50%;
     overflow: hidden;
-    width: 155px;
-    height: 155px;
-    
+    width: 114px;
+    height: 115px;
   }
   .picture {
-    transform: rotate(45deg) translateY(10px);
+    transform: rotate(45deg) translateY(-5px);
      border:4px solid green;
   }
   .picture .picture-rotate {
-    width: 206px;
-    height: 206px;
-    transform: rotate(-45deg) translateY(-42px);
-   
+    width: 151px;
+    height: 155px;
+    transform: rotate(-45deg) translateY(-33px);
   }
   .picture .picture-rotate img {
     width: 100%;
@@ -313,14 +369,47 @@ display: block;
     margin: 20px auto;
     text-align: center;
     color: #434343;
-    font-family: Montserrat;
+    font-family: Montserrat,sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
+    letter-spacing: 1.25px;
 }
-/*Карусель отзывы*/
+/*Карусел stule*/
+#carouselTestimonia .carousel-item{
+    padding: 65px 0;
+}
+#carouselTestimonia .carousel-inner{
+    margin-bottom: 12px;
+}
+#carouselTestimonia .carousel-indicators li{
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 16px;
+    height: 16px;
+    margin-right: -6px;
+    margin-left: 17px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: 1px solid #5452523d;
+    background-color: #26af5f;
+    opacity: 0.5;
+    transform: rotate(-45deg) translateY(-14px);
+}
+#carouselTestimonia .carousel-indicators{
+position: absolute;
+bottom: 21px;
+left: 50%;
+z-index: 15;
+width: 60%;
+padding-left: 0;
+margin-left: -30%;
+text-align: center;
+list-style: none;
+}
 
-.carousel-indicators li {
+#carousel .carousel-indicators li {
     position: relative;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
@@ -335,24 +424,51 @@ display: block;
     opacity: 0.5;
     transform: rotate(-45deg) translateY(-28px);
 }
-.carousel-indicators .active {
+#carouselTestimonia .carousel-indicators .active,#carousel .carousel-indicators li {
     background-color: #26af5f;
+    opacity: 1;
+}
+.slider{
+    position: relative;
+}
+.slider-indicators{
+    bottom:52px;
+    
+}
+#carousel .slider-indicators li{
+    background-color: transparent;
+    border: 2px solid #efefef;
+    margin-left:30px;
+  
+}
+#carousel .slider-indicators .active{
+    border: 1px solid #efefef;
+    background-color: green;
     opacity: 1;
 }
 
 /* SECTION partners */
 #partners{
     position: relative;
-    padding: 100px 0;
+    padding: 120px 0;
 }
+
+#partners img{
+    filter: invert(100%);
+}
+#partners img:hover{
+    filter: invert(50%);
+
+}
+
 /* SECTION BLOG */
 #blog{
     background: #efefef;
     position: relative;
-    padding: 90px 0;
+    padding: 94px 0 54px;
 }
 #blog .section-title{
-    margin-bottom: 90px;
+    margin-bottom: 35px;
 }
 .card-blog .card-body{
     text-align: start;
@@ -364,8 +480,22 @@ display: block;
     margin-bottom: 30px;
 }
 .blog-details{
-    margin: 30px 0 20px;
+    margin: 20px 0;
     padding: 0 20px;
+}
+#blog .card-title{
+    color: #4a4747;
+    font-family: Montserrat,sans-serif;
+    font-size: 24px;
+    font-weight: 500;  
+    text-transform: lowercase;
+    margin: 25px 0 0 0;
+}
+#blog .card-text{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 25px 0 0 0;
 }
 .blog-details .data,.blog-details .comment{
 opacity: 0.5;
@@ -515,4 +645,48 @@ letter-spacing: 3.75px;
 .copyright p a{
     text-decoration: none;
     color: #4a4747;
+}
+@media(max-width:960px){
+    .carousel-title {
+        font-size: .9em;
+        line-height: .9em;
+        letter-spacing: 2.25px;
+        margin: 0;
+    }
+    
+    #service{
+        padding: .8em 0;
+    }
+    .section-title{
+        width: 80%;
+    }
+    .slider-indicators{
+        display: none;
+    }
+}
+@media(max-width:780px){
+   
+    
+   
+}
+
+@media(max-width:467px){
+    #service {
+       
+        padding: 50px 0;
+    }
+    .section-title{
+        width: 100%;
+
+    }
+    .section-title h2 {
+        font-size: .8em;
+    }
+    .sub-title {
+       
+        font-size: .6em;
+        font-weight: 400;
+        line-height: 1.8em;
+        text-transform: none;
+    }
 }
