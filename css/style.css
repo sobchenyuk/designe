@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
 @font-face { font-family: 'Montserrat-bold';  src: url('../fonts/montserrat/montserrat/Montserrat-Bold.ttf') format('truetype'); font-style: normal;  }
 @font-face {  font-family: 'Montserrat-Regular';  src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'); font-style: normal;  }
 @font-face {  font-family: 'Montserrat - Semi Bold';  src: url('../fonts/montserrat/montserrat/Montserrat-SemiBold.ttf') format('truetype');font-weight: bolder;font-style: normal;  }
@@ -33,7 +31,7 @@ img{
     max-width:100%;
     height:auto;
 }
-h2{
+.section-title{
     
     letter-spacing: 1.4px;
     opacity: 0.9;
@@ -59,9 +57,8 @@ a{
     text-align: center;
     width: 55%;
     margin: 0 auto;
-
-    
 }
+
 
 .sub-title{
     color: #434343;
@@ -88,10 +85,13 @@ a{
     right: 0;
     z-index: 20;
     padding: 54px 0 20px;
+    transition: .3s;
 }
 .header-wrapper.sticky{
+    padding: 20px 0 20px;
     background-color: #fff;
     border-bottom: 2px solid #80808057;
+    transition: .3s;
 }
 .header-wrapper.sticky .logo{
     filter:invert(100%); 
@@ -160,6 +160,14 @@ a.carousel-btn {
     cursor: pointer;
     z-index: 20;        
 }
+a.carousel-btn:focus{
+    box-shadow: none;
+}
+a.carousel-btn:hover{
+    border-bottom: 2px solid#fefefebd;
+
+    
+}
   
 /* SECTION SERVICE */
 #service{
@@ -175,25 +183,32 @@ a.carousel-btn {
 .card-service{
   padding-bottom: 2rem;
 }
-.card-service,.card-team{
+.card-project,.card-service,.card-team,.card-blog{
+    cursor: pointer;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    transition: .3s;
+}
+.card-service{
     margin-top: 40px;
     text-align: center;
     vertical-align: middle;
     border: none;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
-}
-.card-service:hover,.card-project:hover{
+}   
+.card-team, #blog .section-content{
+    margin-bottom: 20px;
+    margin-top: 0;}   
+.card-service:hover,.card-project:hover,.card-blog:hover{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.38);
-    transition: 3s;
+    transition: .3s;
 }
 .card-service .card-title{
-margin: 23px 0;
-color: #434343;
-font-family: "Montserrat - Semi Bold",sans-serif;
-font-size: 18px;
-font-weight: 400;
-text-transform: uppercase;
-letter-spacing: 1.8px;
+    margin: 23px 0;
+    color: #434343;
+    font-family: "Montserrat - Semi Bold",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
 }
 .card-img-top{
     margin: 18px auto 23px auto;
@@ -234,10 +249,7 @@ letter-spacing: 1.8px;
     text-transform: capitalize;
     margin-top: 79px;
 }
-#projects a:hover{
-    color: #434343;
-    filter: invert(10%);
-}
+
 #projects .sub-title {
     margin-top: 30px;
     padding: 0;
@@ -263,9 +275,9 @@ letter-spacing: 1.8px;
     border-radius: 5px;
     background-color: #26af5f;
 }
-.btn:hover{
-    color:#000;
-    background:#efefef; 
+.btn-load:hover{
+    color:#fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.47);
 }
 /* SECTION Team */
 #team{
@@ -291,7 +303,7 @@ letter-spacing: 1.8px;
     background: #f9f9f9b3;
     text-align: center;
     backface-visibility: hidden;
-    transition: 3s;
+    transition: .3s;
 }
 #team .card-title{
     font-size: 18px;
@@ -313,7 +325,7 @@ letter-spacing: 1.8px;
 }
 #team .card-team:hover{
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.45);
-    transition: 3s;
+    transition: .3s;
 }
 #team .card-team:hover .card-hover{
 display: block;
@@ -375,7 +387,7 @@ display: block;
     line-height: 32px;
     letter-spacing: 1.25px;
 }
-/*Карусел stule*/
+/*Карусел style*/
 #carouselTestimonia .carousel-item{
     padding: 65px 0;
 }
@@ -398,15 +410,15 @@ display: block;
     transform: rotate(-45deg) translateY(-14px);
 }
 #carouselTestimonia .carousel-indicators{
-position: absolute;
-bottom: 21px;
-left: 50%;
-z-index: 15;
-width: 60%;
-padding-left: 0;
-margin-left: -30%;
-text-align: center;
-list-style: none;
+    position: absolute;
+    bottom: 21px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
 }
 
 #carousel .carousel-indicators li {
@@ -455,6 +467,7 @@ list-style: none;
 
 #partners img{
     filter: invert(100%);
+    cursor: pointer;
 }
 #partners img:hover{
     filter: invert(50%);
@@ -520,12 +533,14 @@ line-height: 13.73px;
     background: url('../img/Layer-537.jpg') center no-repeat;
     background-size: cover;
     padding: 100px 0;
+    font-family: Montserrat,sans-serif;
+font-size: 20px;
+font-weight: 400;
 }
 #contact .title{
     color: #ffffff;
     font-family: "Montserrat - Semi Bold",sans-serif;
     font-size: 36px;
-    font-weight: 400;
     text-transform: uppercase;
     /* Text style for "D, on’t be" */
     letter-spacing: 1.78px; 
@@ -551,33 +566,41 @@ line-height: 13.73px;
     font-size: 26px;
 }
 .location{
+    cursor: pointer;
     margin-bottom: 40px;
 }
 .location-link{
 opacity: 0.8;
 color: #000000;
-font-family: Montserrat,sans-serif;
-font-size: 20px;
-font-weight: 400;
+
 line-height: 29.27px;
 letter-spacing: -0.4px;
 }
-
+.block-form{
+    color: #fefefe;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+}
 .form-group {
+    position: relative;
     margin-bottom: 15px;
 }
 .block-form .form-control{
     background: none;
     border: none;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid;
+    border-color: #efefef;
     border-radius: 1px;
+    box-shadow: none;
+    padding: 0.4rem .7rem 0.3rem 2.7rem;
+    font-size: 20px;
+    color: #fefefe;
+
+   
+
 }
 #form input::placeholder,#form textarea::placeholder {
-    font-family: FontAwesome,Montserrat,sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    opacity: 0.6;
-    color: #ffffff;
+    color: #fefefe;
   }
   
 
@@ -595,6 +618,49 @@ letter-spacing: -0.4px;
     border-radius: 3px;
     background-color: #ffffff;
   }
+  input[type=text], textarea{
+      color: #fffdfd;
+
+  }
+  input[type=text]:focus {
+    border-color:none;
+    color: #fff;
+    opacity: 0.6;
+    letter-spacing: 1.2px;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.icon.positon-left{
+    color: #dbdbdb;
+    height: 2.25em;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 2.25em;
+    z-index: 4;
+}
+.icon .position-left i{
+    color:#efefef;
+}
+.icon-name ,.icon-email,.icon-comment{
+    font-size: 22px;
+}
+textarea{
+    resize: none;
+}
+.invalid .form-control {
+    border-color: #dc3545;
+}
+
+.invalid i{
+    color: #dc3545;
+}
 
 /*  SECTION social-networks*/
 #social-networks{
@@ -645,48 +711,4 @@ letter-spacing: 3.75px;
 .copyright p a{
     text-decoration: none;
     color: #4a4747;
-}
-@media(max-width:960px){
-    .carousel-title {
-        font-size: .9em;
-        line-height: .9em;
-        letter-spacing: 2.25px;
-        margin: 0;
-    }
-    
-    #service{
-        padding: .8em 0;
-    }
-    .section-title{
-        width: 80%;
-    }
-    .slider-indicators{
-        display: none;
-    }
-}
-@media(max-width:780px){
-   
-    
-   
-}
-
-@media(max-width:467px){
-    #service {
-       
-        padding: 50px 0;
-    }
-    .section-title{
-        width: 100%;
-
-    }
-    .section-title h2 {
-        font-size: .8em;
-    }
-    .sub-title {
-       
-        font-size: .6em;
-        font-weight: 400;
-        line-height: 1.8em;
-        text-transform: none;
-    }
 }

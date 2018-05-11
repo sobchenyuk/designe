@@ -6,35 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="#" type="image/x-icon">
+   
     <link rel="stylesheet" href="bootstrap-4.1.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 575px)" href="css/mobile-575.css">
+    
+    <!-- <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile-767.css">
+    <link rel="stylesheet" media="screen and (max-width: 991px)" href="css/mobile-991.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/mobile-1200.css"> -->
     <title>Document</title>
 </head>
 
-<body class="home">
+<body class="home" id="home">
     <div class="wrap">
         <header class="header">
             <div class="header-wrapper">
                 <div class="container d-flex justify-content-between align-items-center">
-                    <a href="index.html" class="logo">
+                        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span> 
+                              </button> -->
+                        
+                    <a href="#home" class="logo">
                         <img src="img/logo.png" alt="">
                     </a>
-                    <ul class="nav">
-                        <li>
-                            <a class="nav-items " href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="nav-items" href="#service">Services</a>
-                        </li>
-                        <li>
-                            <a class="nav-items" href="#projects">Portfolio</a>
-                        </li>
-                        <li>
-                            <a class="nav-items" href="#blog">Blog</a>
-                        </li>
-                    </ul>
+
+                    <div class="r" id="r">
+                        <ul class="nav">
+                            <li class="active">
+                                <a class="nav-items " href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-items" href="#service">Services</a>
+                            </li>
+                            <li>
+                                <a class="nav-items" href="#projects">Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="nav-items" href="#blog">Blog</a>
+                            </li>
+                        </ul>
+                        <!-- <ul>
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Page 1</a></li>
+                                <li><a href="#">Page 2</a></li> 
+                                <li><a href="#">Page 3</a></li> 
+                        </ul> -->
+                </div>
                 </div>
             </div>
         </header>
@@ -80,7 +101,8 @@
                         <span>WE PROVIDE</span>
                         <span>THE BEST SERVICE</span>
                     </h2>
-                    <p class="sub-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class="sub-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry.</p>
                 </header>
                 <div class="section-content">
                     <div class="row">
@@ -89,7 +111,8 @@
                                 <div class="card-body">
                                     <div class="card-img-top icon-dev"></div>
                                     <h3 class="card-title">web development</h3>
-                                    <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+                                    <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have
+                                        suffered alteration.
                                     </p>
                                 </div>
                             </div>
@@ -99,7 +122,8 @@
                                 <div class="card-body">
                                     <div class="card-img-top icon-des"></div>
                                     <h3 class="card-title">UI/UX DESIGN</h3>
-                                    <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have
+                                        suffered alteration.</p>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +132,8 @@
                                 <div class="card-body">
                                     <div class="card-img-top icon-soft"></div>
                                     <h3 class="card-title">software development</h3>
-                                    <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have
+                                        suffered alteration.</p>
                                 </div>
                             </div>
                         </div>
@@ -536,31 +561,46 @@
             <div class="container">
                 <div class="section-content">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <form class="block-form" id="form">
                                 <div class="title">Don’t be shy, Say Hello! </div>
                                 <div class="row">
                                     <div class="col-md-6 form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="&#61447; Name" type="text" required="">
+                                        <div class="icon-right">
+                                            <input class="form-control validate" id="name" name="name" placeholder="Name" type="text" />
+                                            <span class="icon positon-left">
+                                                <i class="fa fa-user icon-name"></i>
+                                            </span>
+                                        </div>
                                     </div>
                                     <div class="col-md-6 form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="&#61447; Email" type="text" required="">
+                                        <div class="icon-right">
+                                            <input class="form-control validate" id="email" name="email" placeholder="Email" type="text" />
+                                            <span class="icon positon-left">
+                                                    <i class="fa fa-envelope icon-email"></i>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="&#xf02b;  Message" rows="5"></textarea>
+                                        <div class="icon-right">
+                                            <textarea class="form-control validate" id="comments" name="comments" placeholder="Message" rows="3"></textarea>
+                                            <span class="icon positon-left">
+                                                    <i class="fa fa-tag icon-comment"></i>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <button class="pull-left btn btn-form" type="submit">Send</button>
+                                        <button class="pull-left btn btn-form" type="submit" >Send</button>
                                     </div>
                                 </div>
 
                             </form>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <div class="block-location d-flex">
                                 <span class="section-title">Our Office</span>
                                 <div class="row location">

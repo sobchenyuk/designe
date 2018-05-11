@@ -1,0 +1,58 @@
+
+@media(max-width:576px){
+    .section-title span,#team .section-title span {
+        margin-bottom: 0;
+        display: inline-block;
+    }
+    #service,#projects,#team,#blog,#partners,#testimonial,#social-networks{
+        padding: 1.2rem 0;
+    }
+    .section-title h2{
+     
+        font-size: 30px;
+
+    }
+
+    #service .section-title,#team .section-title,#projects .section-title,#contact .section-title,#blog .section-title {
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: normal;
+    }
+    .sub-title{
+        font-size: 17px;
+        line-height: normal;
+    }
+    #team .section-content,#blog .section-content {
+        margin-top: 20px;
+    }
+    #social-networks h2{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 1.75px;
+    }
+    .nav, #carousel .slider-indicators{
+        display: none;
+    }
+   
+    #projects a{
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin-top: 30px;
+    }
+    .btn-load {
+        width: 30%;
+        padding: 12px 10px;
+    }
+    .content .description {
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 1.5;
+        letter-spacing: 1.25px;}
+    
+}
