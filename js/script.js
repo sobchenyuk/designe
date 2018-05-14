@@ -50,6 +50,10 @@ $(document).ready(function() {
         }
 
     })()
+   
+    $('.mobile-show-menu').click(function (){
+        $('.collapseing').toggleClass('open');
+    });
 
     
 });

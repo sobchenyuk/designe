@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile-767.css">
     <link rel="stylesheet" media="screen and (max-width: 575px)" href="css/mobile-575.css">
     
-    <!-- <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/mobile-767.css">
     <link rel="stylesheet" media="screen and (max-width: 991px)" href="css/mobile-991.css">
-    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/mobile-1200.css"> -->
+    <!--<link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/mobile-1200.css"> -->
     <title>Document</title>
 </head>
 
@@ -23,12 +23,24 @@
     <div class="wrap">
         <header class="header">
             <div class="header-wrapper">
-                <div class="container d-flex justify-content-between align-items-center">
-                        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span> 
-                              </button> -->
+                <div class="container">
+           <div class="header-items">
+                       <div class="mobile-show-menu">
+                        <button type="button" class="navbar-toggle" data-target="collapseing" data-toogle="collapseing">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                       </div>
+                       <div id="toogleMenu" class="collapseing">
+                        <ul class="mobile-menu bd-links">
+                            <li class="mobile-menu__item"><a href="#">Contact</a></li>
+                            <li class="mobile-menu__item"><a href="#">Features</a></li>
+                            <li class="mobile-menu__item"><a href="#">Pages</a></li>
+                            <li class="mobile-menu__item"><a href="#">Blog</a></li>
+                            <li class="mobile-menu__item"><a href="#">Portfolio</a></li>
+                        </ul>
+                    </div>
                         
                     <a href="#home" class="logo">
                         <img src="img/logo.png" alt="">
@@ -49,12 +61,9 @@
                                 <a class="nav-items" href="#blog">Blog</a>
                             </li>
                         </ul>
-                        <!-- <ul>
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Page 1</a></li>
-                                <li><a href="#">Page 2</a></li> 
-                                <li><a href="#">Page 3</a></li> 
-                        </ul> -->
+                    
+                </div>
+
                 </div>
                 </div>
             </div>

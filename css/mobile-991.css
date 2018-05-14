@@ -1,0 +1,22 @@
+@media(max-width:991px){
+    #carousel .carousel-title {
+           
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 53px;
+        text-transform: uppercase;
+        letter-spacing: 3.25px;
+        margin-bottom: 28px;
+    }
+    #carousel .carusel-content {
+        position: absolute;
+        top: 23%;
+        bottom: 0;
+        left: 25%;
+        right: 25%;
+        z-index: 10;
+    }
+    #carousel .slider-indicators {
+        bottom: 10px;
+    }
+}
