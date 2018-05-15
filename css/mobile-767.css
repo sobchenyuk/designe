@@ -85,7 +85,7 @@
         line-height: 1.2;
         letter-spacing: 1px;
         display: block;
-        width: 30%;
+        /* width: 30%; */
         text-transform: capitalize;
         margin-top: 30px;
     }
@@ -113,13 +113,14 @@
         }
         #partners img {
             width: 100%;
-            margin: 19px auto;
+            padding: 10px;
+            margin: 5px auto;
         }
 
-        #partners [class*=col-sm]{
-            max-width: 29%;
+        /* #partners [class*=col-sm]{
+            max-width: 41%;
             margin: 0 auto;
-        }
+        } */
         #contact .title {
             font-size: 26px;
         }
@@ -193,6 +194,13 @@
         .card-project .card-img {
             width: 100%;
             height: 263px;
+        }
+        .inner-wrapper {
+            padding: 25px 0;
+        }
+        .copyright p{
+            font-size: 15px;
+            line-height: 1.6;
         }
         
     

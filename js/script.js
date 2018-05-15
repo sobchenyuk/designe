@@ -55,5 +55,25 @@ $(document).ready(function() {
         $('.collapseing').toggleClass('open');
     });
 
+
+
+ 
+    $('.nav a').on('click',function(){
+        var elementClick = $(this).attr("href"),
+            destination = $(elementClick).offset().top - 70;
+
+        $('html, body').animate({ scrollTop: destination }, 2000);
+        return false;
+    });
+
+    $('.mobile-menu a').on('click',function(){
+        var elementClick = $(this).attr("href"),
+            destination = $(elementClick).offset().top - 350;
+
+        $('html, body').animate({ scrollTop: destination }, 1500);
+        return false;
+    });
+ 
+
     
 });

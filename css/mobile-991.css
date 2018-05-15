@@ -65,9 +65,7 @@
 
     }
     .block-location {
-    
-       padding: 0;
-       
+        padding: 20px 0;
     }
     .block-location .section-title {
         display: block;
@@ -97,6 +95,13 @@
         margin-bottom: 40px;
         max-width: 100%;
         overflow: hidden;
+    }
+    .inner-wrapper {
+        padding: 50px 10px;
+    }
+    .copyright p{
+        font-size: 20px;
+        line-height: 2em;
     }
 
 }
