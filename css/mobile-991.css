@@ -1,4 +1,7 @@
-@media(max-width:991px){
+@media(min-width: 768px) and (max-width: 991px) {
+    .header-wrapper {
+        padding: 20px 0 20px;
+    }
     #carousel .carousel-title {
            
         font-size: 26px;
@@ -19,4 +22,81 @@
     #carousel .slider-indicators {
         bottom: 10px;
     }
+    #service{
+        padding: .5em 0 .5em;
+    }
+    .section-title {
+        width: 75%;
+    }
+    .card-service {
+            margin-top: 0;
+            margin: 0;
+            padding: 0;
+    }
+    .card-img-top {
+        margin: 18px auto;
+        height: 47px;
+    }
+    .card-service .card-title {
+        margin: 0;
+        padding: 20px 0;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1.2px;
+    }
+    .section-content{
+        margin: 0 0 10px 0;
+    }
+    .card-project .card-img {
+        width: 100%;
+        height: 234px;
+    }
+    #projects,#team,#partners,#testimonial,#blog,#contact,#social-networks {
+    
+        padding: 2.2em 0;
+    }
+    #projects a {
+    
+        margin: 3% auto;
+    }
+    
+    #testimonial .section-content {
+        width: 98.3%;
+
+    }
+    .block-location {
+    
+       padding: 0;
+       
+    }
+    .block-location .section-title {
+        display: block;
+     
+        padding: 7px 0;
+        width: 75%;
+    }
+    .location-link {
+        line-height: 22.27px;
+        
+    }
+    #contact .title {
+        font-size: 28px;
+        margin-bottom: 66px;
+    }
+    #contact .form-group{
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+    .social a {
+        font-size: 27px;
+        padding: 5px 16px;
+    }
+    .location {
+        margin: 0;
+        padding: 0px;
+        margin-bottom: 40px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
 }
