@@ -147,9 +147,6 @@
                 justify-content: center;
                 padding: 14px;
             }
-            .location [class*=location-link]{
-                display: none;
-            }
             .location .icon {
                 text-align: center;
                 color: #26af5e;
@@ -190,5 +187,12 @@
         #contact .d-sm-show .section-title{
             display: block;
             margin-bottom: 15px;
+        }
+        #contact .oder0{
+            order: 0;
+            margin-bottom: 20px;
+        }
+        #contact .oder1{
+            order: 1;
         }
 }

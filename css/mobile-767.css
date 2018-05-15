@@ -116,11 +116,6 @@
             padding: 10px;
             margin: 5px auto;
         }
-
-        /* #partners [class*=col-sm]{
-            max-width: 41%;
-            margin: 0 auto;
-        } */
         #contact .title {
             font-size: 26px;
         }
@@ -160,9 +155,7 @@
                 justify-content: center;
                 padding: 14px;
             }
-            .location [class*=location-link]{
-                display: none;
-            }
+        
             .location .icon {
                 text-align: center;
                 color: #26af5e;
@@ -189,7 +182,7 @@
                min-height: auto;
         }
         .block-location {
-            background: none;
+            text-align: center;
         }
         .card-project .card-img {
             width: 100%;
