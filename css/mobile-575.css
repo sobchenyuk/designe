@@ -5,12 +5,12 @@
        
     }
     .header-items {
-        display: flow-root;
+        /* display: flow-root; */
     
     }
     .mobile-show-menu{
         display: block;
-        float: right;
+        /* float: right; */
     }
     
 #carousel .carousel-item img{
