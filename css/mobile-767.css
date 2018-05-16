@@ -2,7 +2,7 @@
 @media(max-width:767px){
     .header-wrapper {
         padding:20px;
-        background: #004f9a;
+
        
     }
     .header-items {
@@ -13,15 +13,13 @@
         display: block;
         float: right;
     }
-    .slider {
-        margin-top: 15%;
-    }
-
-    
+  
 #carousel .carousel-item img{
     width: 360px;
     min-height: 325px;
 }
+
+ 
     .navbar-toggle {
         display: block;
     }
