@@ -12,9 +12,7 @@
         display: block;
         float: right;
     }
-    .slider {
-        margin-top: 27%;
-    }
+    
 #carousel .carousel-item img{
     width: 360px;
     min-height: 240px;
